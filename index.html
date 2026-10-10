@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Neon Escape </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div id="game-container">
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="ui-layer">
+        <div class="stats">
+            <div>SCORE: <span id="score">0</span></div>
+            <div>BEST: <span id="best">0</span></div>
+        </div>
+    </div>
+
+    <div id="start-menu" class="overlay">
+        <h1>NEON ESCAPE</h1>
+        <p>Space  : پرش | Shift: سپر </p>
+        <button id="start-btn">Start</button>
+    </div>
+
+
+    <div id="game-over-menu" class="overlay hidden">
+        <h1 class="glitch-text">GAME OVER</h1>
+        <p>داده‌های جمع‌آوری شده: <span id="final-score">0</span></p>
+        <button id="restart-btn">تلاش مجدد</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
